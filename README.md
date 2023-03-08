@@ -30,8 +30,8 @@ Honestly, I think `iostream` is tainting the reputation of C++, scaring away new
 
 ## Try it yourself
 ```bash
-$ cmake -DCMAKE_CXX_FLAGS=-O3 -Bbuild
+$ cmake -DCMAKE_CXX_FLAGS=-O3 -Bbuild -DPYBIND11_FINDPYTHON=ON
 $ make -j -Cbuild
-$ bash run_benchmark.sh
+$ bash run_benchmark.sh # requires perf
 ```
 
